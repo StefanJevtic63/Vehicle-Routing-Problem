@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage[OT2,OT1]{fontenc}
+\usepackage[english,serbian]{babel}
+
+\DeclareTextCompositeCommand{\v}{OT2}{C}{Ch}
+\DeclareTextCompositeCommand{\v}{OT2}{c}{ch}
+\DeclareTextCompositeCommand{\v}{OT2}{S}{Sh}
+\DeclareTextCompositeCommand{\v}{OT2}{s}{sh}
+\DeclareTextCompositeCommand{\v}{OT2}{Z}{Zh}
+\DeclareTextCompositeCommand{\v}{OT2}{z}{zh}
+\DeclareTextCompositeCommand{\'}{OT2}{C}{C1}
+\DeclareTextCompositeCommand{\'}{OT2}{c}{c1}
+\DeclareTextCommand{\DJ}{OT2}{Dj}
+\DeclareTextCommand{\dj}{OT2}{dj}
+\DeclareTextCommand{\DZ}{OT1}{Dž}
+\DeclareTextCommand{\DZ}{OT2}{D2}
+\DeclareTextCommand{\dz}{OT1}{dž}
+\DeclareTextCommand{\dz}{OT2}{d2}
+
+\makeatletter
+\g@addto@macro\@uclclist{\dj\DJ\dz\DZ}
+\makeatother
+
+\title{Vehicle Routing Problem \\
+\large
+Projekat iz oblasti računarske inteligencije
+
+}
+\author{Anja Cvetković\\ Stefan Jevtić}
+\date{Školska 2023/2024 godina}
+
+\begin{document}
+
+\maketitle
+
+\section{Uvod}
+Vehicle Routing Problem (skraćeno VRP) je termin koji se koristi za probleme uspostavljanja ruta sa skup vozila na osnovu jednog ili više skladišta i mušterija do kojih treba da se izvrši dostava dobara. Ovo je veliki problem u distribuciji i logistici i danas, a prvi put je opisan 1959. godine, od strane Danciga i Ramsera. Može se posmatrati kao generalizacijom problema putujućeg trgovca, gde se najčešće vrši minimizacija pređenog puta, a u današnje vreme vrši se i minimizacija potrošnje goriva ili vremena.
+
+\section{Klasični VRP}
+\par
+Neka je \(X=\{x_i|i=1,...,N\}\) skup od N mušterija i neka je \(x_0\) skladište. Skup \(V=\{v_j|j=1,...,M\}\) je skup vozila pozicioniranih u skladištu. Posmatrani vremenski period je \(T\). \\
+\par
+Svaki \(x_i\) može imati naredne zahteve:
+\begin{enumerate}
+    \item Količinu \(q_i\) proizvoda za dostavu
+    \item  Vreme \(u_i\) za koje se zahteva da vozilo isporuči robu
+    \item Prioritet \(\delta_i\)
+\end{enumerate}
+\par
+Vozilo \(v_j\) ima naredne karakteristike:
+\begin{enumerate}
+    \item Maksimalni kapacitet tovara \(O_j\)
+    \item Period rada od trenutka \(T^s_j\) to trenutka \(T^k_j\) 
+    \item Fiksirana cena \(C_k\)
+\end{enumerate}
+\par
+Pretpostavićemo da je data cena najkraćeg puta između mušterija \(x_i\) i \(x_j\) sa \(c_{ij}\) i korespondirajuće vreme \(t_{ij}\).\\ \\
+\large\textit{Cilj}
+
+\end{document}

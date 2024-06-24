@@ -19,7 +19,7 @@ Ovo je NP težak problem nad kojim smo primenili nekoliko optimizacionih algorit
 
 # Iskorišćeni algoritmi
 
-Kao glavni optimizacioni algortiam upotrebili smo Genetski algoritam, nad kojim smo koristili sledeće operacije: <br>
+Upotrebili smo Genetski algoritam nad kojim smo koristili sledeće operacije: <br>
  - Selekcija: Random Selection, Tournament Selection, Roulette Selection, Rang Selection <br>
  - Ukrštanje: Order Crossover, Partially Mapped Crossover, Best Route Better Adjustment Crossover <br>
  - Mutacija preko: Swap Mutation, Invert Mutation, Shaking mutation <br>

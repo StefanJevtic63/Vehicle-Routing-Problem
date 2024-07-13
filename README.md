@@ -1,39 +1,39 @@
 # Vehicle Routing Problem With Time Windows
 
-# Uvod
+# Introduction
 
-Vehicle Routing Problem (skraćeno VRP) je termin koji se koristi za probleme uspostavljanja ruta sa skup vozila na osnovu jednog ili više skladišta i mušterija do kojih treba da se izvrši dostava dobara. <br>
-Ovo je veliki problem u distribuciji i logistici i danas, a prvi put je opisan 1959. godine, od strane Danciga i Ramsera. <br>
-Može se posmatrati kao generalizacijom problema putujućeg trgovca, gde se najčešće vrši minimizacija pređenog puta, a u današnje vreme vrši se i minimizacija potrošnje goriva ili vremena. <br>
-Bavićemo se varijantom problema gde se optimizuje ukupno proteklo vreme za svaku rutu. <br>
+Vehicle Routing Problem (abbreviated as VRP) is a term used for the problem of establishing routes with a set of vehicles based on one or more warehouses and customers to which goods are to be delivered. <br>
+This is a major problem in distribution and logistics even today, and was first described in 1959 by Danzig and Ramser. <br>
+It can be seen as a generalization of the problem of the traveling salesman, where the minimization of the traveled distance is most often done, and nowadays the minimization of fuel consumption or time is also done. <br>
+We will deal with a variant of the problem where the total elapsed time for each route is optimized. <br>
 
-# Definicija problema
+# Definition of the problem
 
-Nalazimo se u proizvoljnom gradu u čijem je centru depo odakle sva vozila započinju i završavaju obilazak mušterija. <br>
-Skup vozila se tretira kao homogen - vozila su identična sa zadatim kapacitetom. <br>
-Svaku mušteriju karakteriše količina traženih proizvoda kao i vremenski interval prijema dobara tj.
-svako vozilo mora posetiti mušteriju pre isteka zadatog intervala, a u slučaju ranijeg dolaska mora sačekati. <br>
-Cena svake rute ekvivalenta je vremenu potrebnom da se ona obiđe uz dodatna uračunata zadržavanja kod mušterija. <br>
-Vreme puta između dve mušterije računamo preko njihovog euklidoskog rastojanja. <br>
-Ovo je NP težak problem nad kojim smo primenili nekoliko optimizacionih algoritama sa ciljem poboljšanja proteklog vremena za svaku rutu.
+We are located in an arbitrary city, in the center of which is a depot where all vehicles start and end their customer tour. <br>
+The set of vehicles is treated as homogeneous - the vehicles are identical with the given capacity. <br>
+Each customer is characterized by the quantity of requested products as well as the time interval of receiving the goods, i.e.
+each vehicle must visit the customer before the expiration of the given interval, and in case of earlier arrival, it must wait. <br>
+The price of each route is equivalent to the time needed to go around it with additional delays at the customer's place taken into account. <br>
+We calculate the travel time between two customers using their Euclidean distance. <br>
+This is an NP-hard problem on which we applied several optimization algorithms with the aim of improving the elapsed time for each route.
 
-# Iskorišćeni algoritmi
+# Algorithms used
 
-Upotrebili smo Genetski algoritam nad kojim smo koristili sledeće operacije: <br>
- - Selekcija: Random Selection, Tournament Selection, Roulette Selection, Rang Selection <br>
- - Ukrštanje: Order Crossover, Partially Mapped Crossover, Best Route Better Adjustment Crossover <br>
- - Mutacija preko: Swap Mutation, Invert Mutation, Shaking mutation <br>
+We used the Genetic Algorithm on which we used the following operations: <br>
+ - Selection: Random Selection, Tournament Selection, Roulette Selection, Rank Selection <br>
+ - Crossover: Order Crossover, Partially Mapped Crossover, Best Route Better Adjustment Crossover <br>
+ - Mutation via: Swap Mutation, Invert Mutation, Shaking mutation <br>
 
-# Korišćeni skup podataka
+# Dataset used
 
 - [R101](http://web.cba.neu.edu/~msolomon/r101.htm)
 
-# Uputstvo za pokretanje
+# Cloning of the repository via SSH
 
-- Pozicionirati se u željeni direktorijum
-- git clone git@github.com:AnjaCvetkovic25/vehicle-routing-problem.git
+- Position yourself in the desired directory
+- git clone git@github.com:StefanJevtic63/vehicle-routing-problem.git
 
-# Autori
+# Authors
 
-[Anja Cvetković](https://github.com/AnjaCvetkovic25/)   
-[Stefan Jevtić](https://github.com/StefanJevtic63)
+[Anja Cvetkovic](https://github.com/AnjaCvetkovic25/)
+[Stefan Jevtic](https://github.com/StefanJevtic63)

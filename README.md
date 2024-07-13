@@ -15,7 +15,7 @@ Each customer is characterized by the quantity of requested products as well as 
 each vehicle must visit the customer before the expiration of the given interval, and in case of earlier arrival, it must wait. <br>
 The price of each route is equivalent to the time needed to go around it with additional delays at the customer's place taken into account. <br>
 We calculate the travel time between two customers using their Euclidean distance. <br>
-This is an NP-hard problem on which we applied several optimization algorithms with the aim of improving the elapsed time for each route.
+This is an NP-hard problem on which we applied optimization algorithm with the aim of improving the elapsed time for each route.
 
 # Algorithms used
 
